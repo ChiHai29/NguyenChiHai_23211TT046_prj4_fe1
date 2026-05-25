@@ -1,0 +1,70 @@
+.menu-link {
+    font-size: 12px;
+    color: #050505;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.shipping {
+    background: #fef5d9;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero {
+    height: 620px;
+    background: url('images/slideshow-1_10f93c77-966b-42f0-86aa-4d863fbe8090_2048x.jpg') no-repeat;
+    margin-top: 0px;
+    background-size: cover;
+    background-position:right end;
+     display: flex;
+}
+
+.banner {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.title {
+    color: black;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+
+.arrow-btn {
+    width: 60px;
+    height: 60px;
+}
+ .quote{
+        font-size:40px;
+        font-weight:700;
+        line-height:1.5;
+    }
+
+
+@media(max-width:770px) {
+
+    .hero {
+        height: 450px;
+    }
+
+    .title {
+        font-size: 50px;
+        letter-spacing: -1px;
+    }
+     .quote{
+            font-size:24px;
+        }
+}
+.tooter {
+    background: #f5f3ed;
+}
