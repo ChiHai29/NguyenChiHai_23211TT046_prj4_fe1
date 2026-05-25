@@ -3,6 +3,7 @@
     color: #050505;
     text-transform: uppercase;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .menu-link:hover {
@@ -19,10 +20,10 @@
 .hero {
     height: 620px;
     background: url('images/slideshow-1_10f93c77-966b-42f0-86aa-4d863fbe8090_2048x.jpg') no-repeat;
-    margin-top: 0px;
     background-size: cover;
-    background-position:right end;
-     display: flex;
+    background-position: 35% center;
+    display: flex;
+    align-items: center;
 }
 
 .banner {
@@ -31,6 +32,7 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
+
 .title {
     color: black;
     font-size: 90px;
@@ -44,27 +46,143 @@
     width: 60px;
     height: 60px;
 }
- .quote{
-        font-size:40px;
-        font-weight:700;
-        line-height:1.5;
+
+.quote {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.card img {
+    transition: 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+.tooter {
+    background: #f5f3ed;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width: 991px) {
+
+    .hero {
+        height: 500px;
+        text-align: center;
     }
 
+    .title {
+        font-size: 60px;
+        letter-spacing: -2px;
+    }
+
+    .banner {
+        font-size: 18px;
+    }
+
+    .quote {
+        font-size: 30px;
+    }
+
+    /* bỏ padding lệch */
+    .hero .ps-5,
+    .hero .ms-5 {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    /* button hero */
+    .hero .btn {
+        margin-left: 0 !important;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .d-flex {
+        justify-content: center !important;
+    }
+}
+
+/* ================= MOBILE ================= */
 
 @media(max-width:770px) {
 
     .hero {
         height: 450px;
+        background-position: center;
+        padding: 20px;
     }
 
     .title {
         font-size: 50px;
         letter-spacing: -1px;
     }
-     .quote{
-            font-size:24px;
-        }
+
+    .banner {
+        font-size: 16px;
+    }
+
+    .quote {
+        font-size: 24px;
+    }
+
+    .arrow-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .position-relative .bg-white {
+        margin-top: -40px !important;
+    }
+
+    .fs-3 {
+        font-size: 22px !important;
+    }
+
+    .menu-link {
+        font-size: 11px;
+    }
 }
-.tooter {
-    background: #f5f3ed;
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:576px) {
+
+    .hero {
+        height: 380px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .banner {
+        font-size: 14px;
+    }
+
+    .quote {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    .shipping {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
 }
